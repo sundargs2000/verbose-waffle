@@ -13,6 +13,8 @@ configs:
   # Meta data for creating the new repository
   repo-metadata:
     parameters:
+      topics:
+        - abc
       secrets: 
       - name: DEV_SPN_ID
         value: ${{inputs.DEV_SPN_ID}}
