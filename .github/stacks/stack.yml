@@ -8,13 +8,3 @@ inputs:
   - name: DEV_SPN_ID
     description: SPN ID for Dev deployments
     is-secret: true
-
-configs:
-  # Meta data for creating the new repository
-  repo-metadata:
-    parameters:
-      topics:
-        - abc
-      secrets: 
-      - name: DEV_SPN_ID
-        value: ${{inputs.DEV_SPN_ID}}
