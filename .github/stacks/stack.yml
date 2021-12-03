@@ -15,8 +15,5 @@ configs:
       secrets: 
       - name: DEV_SPN_ID
         value: ${{inputs.DEV_SPN_ID}}
-      topics:
-      - rails
-      - sql
     
     
