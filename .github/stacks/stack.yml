@@ -8,3 +8,15 @@ inputs:
   - name: DEV_SPN_ID
     description: SPN ID for Dev deployments
     is-secret: true
+    
+configs:
+  repo-metadata:
+    parameters:
+      secrets: 
+      - name: DEV_SPN_ID
+        value: ${{inputs.DEV_SPN_ID}}
+      topics:
+      - rails
+      - sql
+    
+    
